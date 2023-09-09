@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", "sans-serif";
+}
+.dashboarUnits{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+.navBox{
+    color:white;
+
+}
+nav{
+    border: 2px solid rgb(214, 237, 9);
+    background-color: lightblue;
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+
+    width: 20vw;
+    height: 100vh;
+}
+.navBox li{
+
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.menu{
+    display: none;
+}
+@media screen and (max-width: 945px) {
+    nav{
+        height: 20px;
+    }
+    
+    .menu{
+        display: initial;
+        height:20px;
+        /* margin-left: auto; */
+        margin-right:10px;
+    }
+    
+
+   
+    .options {
+        display: none;
+    }
+
+    .unhideMenu{
+        display: flex;
+        background-color: lightgreen;
+        flex-direction: column;
+        position: absolute;
+        /* margin-left: 70%; */
+        margin-top: 50px;
+    }
+   
+  }
+

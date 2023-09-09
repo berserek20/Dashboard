@@ -1,0 +1,21 @@
+.container{
+        display: flex;
+        flex-direction: row;
+}
+.PIeChart{
+    border: 2px solid blue;
+    width: 40vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+}
+.box{
+    border: 2px solid red;
+    width: 240px;
+    height: 256px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}

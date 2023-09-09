@@ -1,0 +1,12 @@
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 85vw;
+    height: 100vh;
+    margin: 10px;
+}
+.foot{
+    display: flex;
+    flex-direction: row;
+}

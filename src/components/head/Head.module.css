@@ -1,0 +1,48 @@
+.box{
+    width: 15vw;
+    height: 15vh;
+    /* border:2px solid red; */
+    border-radius: 10%;
+    /* margin: 10px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
+    gap:10px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* gap: 10px; */
+}
+.dashboardPage{
+    display: flex;
+    flex-direction: column;
+}
+img{
+    height: 24px;
+    width: 26.4px;
+}
+.search{
+    height: 90%;
+    margin-Left:auto;
+    border:1px solid black;
+    border-radius:10px;
+}
+.p{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 945px) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
