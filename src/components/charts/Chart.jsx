@@ -30,7 +30,9 @@ const Chart =()=> {
         
 
         if(svgRef.current){
+            
             const svg = select(svgRef.current);
+            svg.selectAll('.bar').remove();
             svg.select('.x-axis').style('transform',`translateY(${h}px)`).call(xAxis);
             svg.select('.y-axis').call(yAxis);
 

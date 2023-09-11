@@ -13,12 +13,14 @@ function PIeChart() {
         const radius= width/2;
         console.log("radius",radius);
         const svg = select(svgRef.current);
+        svg.selectAll("*").remove();
+
         svg.attr("width",width).attr("height",height).attr("overflow","visible");
         const formatData=  pie().value(d => d.value)(data);
         const createArc = arc().innerRadius(0).outerRadius(radius);
         const colors = scaleOrdinal().range(schemeSet2);
         svg.selectAll().data(formatData).join('path').attr('d',createArc).attr('fill',(d)=>colors(d.value)).attr('opacity',0.7).style('transform',`translate(${radius}px,${radius}px )`).attr("id", "mypiechart");                        
-        svg.select("#mypiechart").remove();
+        // svg.select("#mypiechart").remove();
         
     },[width,height])
   return (

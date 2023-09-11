@@ -33,6 +33,7 @@ function Login() {
                             <GoogleLogin
                                 onSuccess={credentialResponse => {
                                     console.log(credentialResponse);
+                                    window.location.href = '/menu';
                                 }}
                                 onError={() => {
                                     console.log('Login Failed');
